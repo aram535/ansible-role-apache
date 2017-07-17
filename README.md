@@ -65,8 +65,8 @@ No SSL vhosts are configured by default, but you can add them using the same pat
     apache_vhosts_ssl:
       - servername: "local.dev",
         documentroot: "/var/www/html",
-        certificate_file: "/home/vagrant/example.crt",
-        certificate_key_file: "/home/vagrant/example.key",
+        certificate_file: "/home/vagrant/example.crt"
+        certificate_key_file: "/home/vagrant/example.key"
         certificate_chain_file: "/path/to/certificate_chain.crt"
         extra_parameters: |
           RewriteCond %{HTTP_HOST} !^www\. [NC]
